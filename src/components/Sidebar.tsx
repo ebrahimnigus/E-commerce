@@ -81,7 +81,6 @@ const Sidebar = () => {
   }
 
 
-
   return <div className="w-64 p-5 h-screen">
     <h1 className="text-2xl font-bold mb-10 mt-4">
       React Store
