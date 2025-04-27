@@ -34,11 +34,11 @@ const MainContent = () => {
         if (selectedCategory) {
             filteredProducts = filteredProducts.filter((product) => product.category === selectedCategory)
         };
-        if (minPrice === undefined) {
-            filteredProducts = filteredProducts.filter(product => product.price >= minPrice)
+        if (minPrice !== undefined) {
+            filteredProducts = filteredProducts.filter(product => product.price >= minPrice);
         }
-        if (maxPrice === undefined) {
-            filteredProducts = filteredProducts.filter(product => product.price <= maxPrice)
+        if (maxPrice !== undefined) {
+            filteredProducts = filteredProducts.filter(product => product.price <= maxPrice);
         }
         if (searchQuery) {
             filteredProducts = filteredProducts.filter(product => product.title.toLowerCase().includes(searchQuery.toLowerCase()))
@@ -89,7 +89,7 @@ const MainContent = () => {
 
             <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 gap-5">   
                 {filteredProducts.map(product => (
-                  <BookCard />
+                  <BookCard key={product.id} id={product.id} title={product.title} image={product.thumbnail} price={product.price}/>
                 ))}
             </div>
         </div>
