@@ -1,4 +1,4 @@
-# 🛍️ E-Commerce (TypeScript + Tailwind CSS)
+# 🛍️ E-Commerce (TypeScript + Tailwind)
 
 
 A clean, responsive frontend for an e-commerce website built using **React**, **TypeScript**, and **Tailwind CSS**. This project focuses purely on the UI/UX — no backend integration.
