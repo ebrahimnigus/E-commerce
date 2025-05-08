@@ -28,3 +28,7 @@ A clean, responsive frontend for an e-commerce website built using **React**, **
 > **React Router** (for navigation)
   
 > **Context API or useState** (for cart management)
+
+Screenshot
+
+![Screenshot 2025-05-08 233232](https://github.com/user-attachments/assets/173f8154-f01c-42d0-881c-8fcc582a067f)
